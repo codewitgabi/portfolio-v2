@@ -32,7 +32,7 @@ import VSCode from "../../assets/skills/VSCode-Dark.svg";
 function SkillSection() {
   return (
     <>
-      <div className="mt-[5em]" id="skills">
+      <section className="mt-[5em]" id="skills">
         <div className="w-[1024px] mx-auto">
           <div className="flex items-center justify-center flex-col gap-2">
             <h4 className="uppercase text-[0.7rem] text-slate-500 tracking-widest">
@@ -50,38 +50,38 @@ function SkillSection() {
 
           <div className="mt-16 grid grid-cols-12 gap-4 text-center">
             <img src={Bash} alt="" />
-            <img src={Bootstrap} alt="" />
-            <img src={CSS} alt="" />
-            <img src={Django} alt="" />
-            <img src={Docker} alt="" />
-            <img src={ExpressJS} alt="" />
-            <img src={Git} alt="" />
-            <img src={Github} alt="" />
-            <img src={GraphQL} alt="" />
-            <img src={HTML} alt="" />
-            <img src={JavaScript} alt="" />
-            <img src={Markdown} alt="" />
-            <img src={MongoDB} alt="" />
-            <img src={Nginx} alt="" />
-            <img src={NodeJS} alt="" />
-            <img src={Npm} alt="" />
-            <img src={Postgres} alt="" />
-            <img src={Postman} alt="" />
-            <img src={Powershell} alt="" />
-            <img src={Python} alt="" />
-            <img src={RabbitMQ} alt="" />
-            <img src={React} alt="" />
-            <img src={Redux} alt="" />
-            <img src={SQLite} alt="" />
-            <img src={TailwindCSS} alt="" />
-            <img src={TypeScript} alt="" />
-            <img src={Ubuntu} alt="" />
-            <img src={Vercel} alt="" />
-            <img src={VIM} alt="" />
-            <img src={VSCode} alt="" />
+            <img src={Bootstrap} alt="bash" />
+            <img src={CSS} alt="css" />
+            <img src={Django} alt="django" />
+            <img src={Docker} alt="docker" />
+            <img src={ExpressJS} alt="expressjs" />
+            <img src={Git} alt="git" />
+            <img src={Github} alt="github" />
+            <img src={GraphQL} alt="graphql" />
+            <img src={HTML} alt="html" />
+            <img src={JavaScript} alt="javascript" />
+            <img src={Markdown} alt="markdown" />
+            <img src={MongoDB} alt="mongodb" />
+            <img src={Nginx} alt="nginx" />
+            <img src={NodeJS} alt="nodejs" />
+            <img src={Npm} alt="npm" />
+            <img src={Postgres} alt="postgres" />
+            <img src={Postman} alt="postman" />
+            <img src={Powershell} alt="powershell" />
+            <img src={Python} alt="python" />
+            <img src={RabbitMQ} alt="rabbitmq" />
+            <img src={React} alt="react" />
+            <img src={Redux} alt="redux" />
+            <img src={SQLite} alt="sqlite" />
+            <img src={TailwindCSS} alt="tailwindcss" />
+            <img src={TypeScript} alt="typescript" />
+            <img src={Ubuntu} alt="ubuntu" />
+            <img src={Vercel} alt="vercel" />
+            <img src={VIM} alt="vim" />
+            <img src={VSCode} alt="vscode" />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

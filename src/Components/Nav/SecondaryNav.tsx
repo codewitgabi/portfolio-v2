@@ -4,7 +4,7 @@ import GradientButton from "../GradientButton";
 function SecondaryNav() {
   return (
     <>
-      <header className="bg-secondary-background py-4 border-t-[1px] border-primary-background">
+      <header className="bg-secondary-background py-4 border-t-[1px] border-green-cool">
         <nav className="w-[1024px] mx-auto flex items-center justify-between">
           <Logo />
 
