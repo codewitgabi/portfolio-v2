@@ -1,7 +1,37 @@
+import React from "react";
 import GradientButton from "../GradientButton";
-// import PaperPlane from "../../assets/paper plane.png";
+
+// const EMAIL_USER = import.meta.env.VITE_EMAIL_USER;
+// const EMAIL_PASSWORD = import.meta.env.VITE_EMAIL_PASSWORD;
+// const EMAIL_PORT = import.meta.env.VITE_EMAIL_PORT;
 
 function ContactSection() {
+  const handleContactMessaging = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtp.gmail.com",
+    //   port: EMAIL_PORT,
+    //   secure: true,
+    //   auth: {
+    //     user: EMAIL_USER,
+    //     pass: EMAIL_PASSWORD,
+    //   },
+    // });
+
+    // const { sender, email, message } = e.target as HTMLFormElement;
+
+    // await transporter.sendMail({
+    //   from: email.value,
+    //   to: "",
+    //   subject: `Portfolio from ${sender.value}`,
+    //   text: message.value,
+    //   html: `<p>${message.value}</p>`,
+    // });
+
+    (e.target as HTMLFormElement).reset();
+  };
+
   return (
     <>
       <section className="mt-[5em] bg-secondary-background" id="contact">
@@ -10,8 +40,8 @@ function ContactSection() {
             <div className="">
               <h2 className="text-2xl">Have any project idea?</h2>
               <span className="text-slate-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Inventore, recusandae!
+                Ready to turn your ideas into reality? Reach out today, and
+                let's embark on a journey of digital transformation together.
               </span>
             </div>
 
@@ -22,13 +52,13 @@ function ContactSection() {
             <h3 className="border border-green-cool w-max py-2 px-8 rounded-ss-3xl rounded-ee-3xl">
               Send me a message
             </h3>
-            <form action="" method="post">
+            <form action="" method="post" onSubmit={handleContactMessaging}>
               <div className="mt-16 grid grid-cols-2 gap-4">
                 <div className="relative">
                   <input
                     type="text"
                     id="name"
-                    name="name"
+                    name="sender"
                     className="outline-none border-b border-green-cool bg-inherit w-full text-sm caret-green-cool contact-input"
                     required
                   />
@@ -69,6 +99,10 @@ function ContactSection() {
                   Message*
                 </label>
               </div>
+
+              <button className="inline-block w-max mt-12 bg-green-cool text-slate-500 rounded-full py-2 px-12 hover:bg-green-200 transition-all duration-300">
+                Send Message
+              </button>
             </form>
           </div>
         </div>

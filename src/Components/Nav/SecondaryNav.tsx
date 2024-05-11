@@ -62,7 +62,7 @@ function SecondaryNav({
             </a>
           </div>
 
-          <GradientButton text="Discuss for projects" />
+          <GradientButton text="Discuss for projects" href="#contact" />
         </nav>
       </header>
     </>

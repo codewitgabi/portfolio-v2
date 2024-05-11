@@ -52,7 +52,7 @@ function PrimaryNav() {
             </span>
             <span className="flex items-center gap-3">
               <IoLocationOutline className="text-[1rem]" />
-              <span className="text-[0.8rem]">Talba road, Gidan Kwano</span>
+              <span className="text-[0.8rem]">Talba road, Gidan Kwano, Niger state.</span>
             </span>
           </div>
         </nav>

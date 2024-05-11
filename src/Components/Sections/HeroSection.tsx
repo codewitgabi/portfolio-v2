@@ -15,19 +15,32 @@ function HeroSection() {
               Gabriel Michael Ojomakpene
             </h2>
             <p className="mt-4 text-slate-400">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-              enim, sit quidem est inventore consectetur et fugit accusantium
-              iure quae? Recusandae obcaecati delectus cupiditate incidunt, quis
-              corporis illum! Velit error, ut vero reprehenderit modi recusandae
-              blanditiis officia, quae doloremque at harum dicta porro ex.
-              Expedita amet vitae numquam porro voluptas.
+              I am a seasoned backend developer proficient in{" "}
+              <em className="text-green-cool">Django</em> and{" "}
+              <em className="text-green-cool">Node.js</em>. With{" "}
+              <em className="text-green-cool font-bold text-xl">2+</em> of
+              experience, I specialize in crafting robust and scalable
+              solutions, from optimizing database performance to architecting
+              complex API systems. So, whether you're a startup looking to make
+              your mark or an established enterprise seeking to innovate, I
+              invite you to explore the possibilities together. Let's embark on
+              a journey of digital transformation, where every line of code we
+              write brings us closer to your vision of success. Welcome to my
+              digital space, where innovation meets expertise, and where your
+              digital aspirations find their perfect ally.
             </p>
 
             <div className="flex items-center gap-6 mt-8 max-[375px]:flex-col">
-              <GradientButton text="Discuss for projects" className="max-[375px]:w-full max-[375px]:text-center" />
+              <GradientButton
+                text="Discuss for projects"
+                className="max-[375px]:w-full max-[375px]:text-center"
+                href="mailto:codewitgabi222@gmail.com"
+              />
               <a
-                href="#!"
+                href="../../assets/Resume/resume.pdf"
                 className="bg-gradient-to-r from-[#194BFD] to-[#AD13FB] text-[0.85rem] rounded-full py-2 px-4 flex items-center gap-2 w-max max-[375px]:w-full max-[375px]:justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>Download Resume</span>
                 <MdOutlineFileDownload className="text-lg" />

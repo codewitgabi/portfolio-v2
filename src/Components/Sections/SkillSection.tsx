@@ -43,8 +43,9 @@ function SkillSection() {
               <span className="text-green-cool">Stack</span>
             </h2>
             <p className="w-[300px] text-center text-[0.85rem] text-slate-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              blanditiis ipsum ducimus fugiat laudantium nam?
+              Empowering Innovation with a Robust Tech Stack Now, let's delve
+              into the tools and technologies that fuel my journey of digital
+              transformation.
             </p>
           </div>
 
