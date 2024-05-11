@@ -10,7 +10,7 @@ function FooterSection() {
   return (
     <>
       <footer className="mt-[5em]">
-        <div className="w-[1024px] mx-auto grid grid-cols-3">
+        <div className="w-[1024px] mx-auto grid grid-cols-3 max-[1070px]:w-[initial] max-[1070px]:mx-[1.5em] max-[555px]:grid-cols-1 max-[555px]:gap-12">
           <div className="flex flex-col gap-4">
             <Logo />
             <div className="flex items-center gap-4 text-slate-500">
@@ -79,7 +79,7 @@ function FooterSection() {
             </div>
           </div>
         </div>
-        <div className="text-center text-[0.85rem] text-green-cool py-4 border-t-[0.1px] border-green-cool mt-4">
+        <div className="text-center text-[0.85rem] text-green-cool py-4 border-t-[0.1px] border-green-cool mt-4 max-[555px]:mt-16">
           Copyright 2024 | All Rights Reserved
         </div>
       </footer>

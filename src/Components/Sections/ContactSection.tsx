@@ -5,7 +5,7 @@ function ContactSection() {
   return (
     <>
       <section className="mt-[5em] bg-secondary-background" id="contact">
-        <div className="w-[1024px] mx-auto p-8 grid grid-cols-2 gap-8">
+        <div className="w-[1024px] mx-auto py-8 grid grid-cols-2 gap-8 max-[1070px]:w-[initial] max-[1070px]:mx-[1.5em] max-[675px]:grid-cols-1 max-[675px]:gap-20">
           <div className="flex flex-col items-start gap-6">
             <div className="">
               <h2 className="text-2xl">Have any project idea?</h2>

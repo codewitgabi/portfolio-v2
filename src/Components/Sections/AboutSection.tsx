@@ -2,7 +2,7 @@ function AboutSection() {
   return (
     <>
       <div className="mt-[5em]" id="about">
-        <div className="w-[1024px] mx-auto">
+        <div className="w-[1024px] mx-auto max-[1070px]:w-[initial] max-[1070px]:mx-[1.5em]">
           <div className="flex items-center justify-center flex-col gap-2">
             <h4 className="uppercase text-[0.7rem] text-slate-500 tracking-widest">
               About me
@@ -17,7 +17,7 @@ function AboutSection() {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-6 gap-6 relative">
+          <div className="mt-16 grid grid-cols-6 gap-6 relative max-[950px]:grid-cols-3 max-[725px]:grid-cols-2 max-[375px]:grid-cols-1">
             <div className="border-t border-b border-green-cool flex items-center justify-center h-[100px] bg-secondary-background rounded-sm">
               <span>Empathize</span>
             </div>

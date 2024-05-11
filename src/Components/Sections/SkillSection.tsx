@@ -33,7 +33,7 @@ function SkillSection() {
   return (
     <>
       <section className="mt-[5em]" id="skills">
-        <div className="w-[1024px] mx-auto">
+        <div className="w-[1024px] mx-auto max-[1070px]:w-[initial] max-[1070px]:mx-[1.5em]">
           <div className="flex items-center justify-center flex-col gap-2">
             <h4 className="uppercase text-[0.7rem] text-slate-500 tracking-widest">
               SKills
@@ -48,7 +48,7 @@ function SkillSection() {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-12 gap-4 text-center">
+          <div className="mt-16 grid grid-cols-12 gap-4 text-center max-[570px]:grid-cols-8 max-[555px]:grid-cols-5 max-[375px]:grid-cols-3">
             <img src={Bash} alt="" />
             <img src={Bootstrap} alt="bash" />
             <img src={CSS} alt="css" />
