@@ -19,7 +19,7 @@ function Specialty({
         <img src={img} alt="specialty-img" className="" />
         <p className="">{specialty}</p>
         <img src={Hr} alt="divider" className="" />
-        <span className="text-slate-500 text-[0.8rem]">{description}</span>
+        <span className="text-slate-500 text-[1rem]">{description}</span>
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import Navbar from "./Components/Nav/Navbar";
 import AboutSection from "./Components/Sections/AboutSection";
 import ContactSection from "./Components/Sections/ContactSection";
+import ExperienceSection from "./Components/Sections/ExperienceSection";
 import FooterSection from "./Components/Sections/FooterSection";
 import HeroSection from "./Components/Sections/HeroSection";
 import ProjectSection from "./Components/Sections/ProjectSection";
@@ -16,6 +17,7 @@ function PortfolioApp() {
       <SkillSection />
       <SpecialtySection />
       <ProjectSection />
+      <ExperienceSection />
       <ContactSection />
       <FooterSection />
     </>

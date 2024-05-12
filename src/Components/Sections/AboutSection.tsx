@@ -11,7 +11,7 @@ function AboutSection() {
               <span>My</span>
               <span className="text-green-cool">Work Process</span>
             </h2>
-            <p className="w-[300px] text-center text-[0.85rem] text-slate-500">
+            <p className="w-[300px] text-center text-[1rem] text-slate-500">
               Driven by a passion for problem-solving and a dedication to
               excellence, below are my approaches to building products and
               services.

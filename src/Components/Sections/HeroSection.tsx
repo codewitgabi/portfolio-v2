@@ -9,16 +9,16 @@ function HeroSection() {
         <div className="w-[1024px] mx-auto grid grid-cols-2 gap-4 max-[1070px]:w-[initial] max-[1070px]:mx-[1.5em] max-[795px]:grid-cols-1 max-[795px]:gap-20">
           <div className="">
             <h3 className="text-[1.5rem] font-leagueScript text-green-cool font-black">
-              Backend Developer
+              Fullstack Developer
             </h3>
             <h2 className="text-[1.5rem] text-green-cool">
               Gabriel Michael Ojomakpene
             </h2>
             <p className="mt-4 text-slate-400">
-              I am a seasoned backend developer proficient in{" "}
-              <em className="text-green-cool">Django</em> and{" "}
+              I am a seasoned fullstack developer proficient in{" "}
+              <em className="text-green-cool">Python</em> and{" "}
               <em className="text-green-cool">Node.js</em>. With{" "}
-              <em className="text-green-cool font-bold text-xl">2+</em> of
+              <em className="text-green-cool font-bold text-xl">2+</em> years of
               experience, I specialize in crafting robust and scalable
               solutions, from optimizing database performance to architecting
               complex API systems. So, whether you're a startup looking to make

@@ -4,6 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { GoHome, GoInfo, GoProjectSymlink, GoTools } from "react-icons/go";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { LuFocus } from "react-icons/lu";
+import { FaBuromobelexperte } from "react-icons/fa";
 
 function MobileSideNav({
   isNavOpen,
@@ -70,6 +71,13 @@ function MobileSideNav({
           >
             <GoProjectSymlink className="text-xl text-green-cool" />
             <span>Projects</span>
+          </a>
+          <a
+            href="#experience"
+            className="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-green-cool hover:before:w-full before:transition-all before:duration-300 flex items-center gap-3"
+          >
+            <FaBuromobelexperte className="text-xl text-green-cool" />
+            Experience
           </a>
           <a
             href="#contact"

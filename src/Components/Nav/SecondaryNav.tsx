@@ -55,6 +55,12 @@ function SecondaryNav({
               Projects
             </a>
             <a
+              href="#experience"
+              className="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-green-cool hover:before:w-full before:transition-all before:duration-300"
+            >
+              Experience
+            </a>
+            <a
               href="#contact"
               className="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-green-cool hover:before:w-full before:transition-all before:duration-300"
             >

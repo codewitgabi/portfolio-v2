@@ -40,7 +40,7 @@ function SpecialtySection() {
               <span>My</span>
               <span className="text-green-cool">Specialties</span>
             </h2>
-            <p className="w-[300px] text-center text-[0.85rem] text-slate-500">
+            <p className="w-[300px] text-center text-[1rem] text-slate-500">
               Let me showcase my specialized skills and areas of expertise,
               meticulously honed over years of hands-on experience and
               continuous learning.

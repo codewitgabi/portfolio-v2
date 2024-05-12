@@ -42,7 +42,7 @@ function SkillSection() {
               <span>My</span>
               <span className="text-green-cool">Stack</span>
             </h2>
-            <p className="w-[300px] text-center text-[0.85rem] text-slate-500">
+            <p className="w-[300px] text-center text-[1rem] text-slate-500">
               Empowering Innovation with a Robust Tech Stack Now, let's delve
               into the tools and technologies that fuel my journey of digital
               transformation.

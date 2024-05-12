@@ -19,7 +19,7 @@ function ProjectSection() {
               <span>My</span>
               <span className="text-green-cool">Projects</span>
             </h2>
-            <p className="w-[300px] text-center text-[0.85rem] text-slate-500">
+            <p className="w-[300px] text-center text-[1rem] text-slate-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               blanditiis ipsum ducimus fugiat laudantium nam?
             </p>
