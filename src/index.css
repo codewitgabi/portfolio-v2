@@ -58,9 +58,17 @@ html {
     color: var(--green);
   }
 
+  .contact-input:valid + label {
+    bottom: 25px;
+  }
+
   .contact-textarea:focus + label {
     bottom: 50px;
     color: var(--green);
+  }
+
+  .contact-textarea:valid + label {
+    bottom: 50px;
   }
 }
 
