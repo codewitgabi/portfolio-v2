@@ -20,8 +20,9 @@ function ProjectSection() {
               <span className="text-green-cool">Projects</span>
             </h2>
             <p className="w-[300px] text-center text-[1rem] text-slate-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              blanditiis ipsum ducimus fugiat laudantium nam?
+              Discover a curated selection of projects that exemplify my
+              commitment to excellence and innovation in backend and fullstack
+              development
             </p>
           </div>
 
@@ -34,15 +35,15 @@ function ProjectSection() {
               breakpoints={{
                 680: {
                   slidesPerView: 2,
-                  spaceBetween: 50
-                }
+                  spaceBetween: 50,
+                },
               }}
             >
               <SwiperSlide>
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/assets/project.png)",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>
@@ -51,7 +52,7 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/assets/project.png)",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>
@@ -60,7 +61,7 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/assets/project.png)",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>
@@ -69,7 +70,7 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/assets/project.png)",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>
