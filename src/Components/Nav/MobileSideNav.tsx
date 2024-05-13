@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { IoLocationOutline } from "react-icons/io5";
+import { IoLocationOutline, IoCloseOutline } from "react-icons/io5";
 import { GoHome, GoInfo, GoProjectSymlink, GoTools } from "react-icons/go";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { LuFocus } from "react-icons/lu";
@@ -31,12 +31,18 @@ function MobileSideNav({
   return (
     <>
       <div
-        className={`hidden max-[730px]:w-[300px] max-[730px]:flex max-[730px]:flex-col max-[730px]:justify-between max-[730px]:fixed max-[730px]:top-0 ${
+        className={`hidden max-[730px]:w-[300px] max-[730px]:flex max-[730px]:flex-col gap-20 max-[730px]:justify-between max-[730px]:fixed max-[730px]:top-0 ${
           isNavOpen ? "max-[730px]:right-0" : "max-[730px]:-right-[990px]"
-        } max-[730px]:h-screen max-[730px]:bg-secondary-background max-[730px]:backdrop-blur-[4px] max-[730px]:p-12 max-[730px]:border-l max-[730px]:border-green-cool max-[730px]:z-[999] transition-all duration-300`}
+        } max-[730px]:h-screen max-[730px]:bg-secondary-background max-[730px]:backdrop-blur-[4px] max-[730px]:p-12 max-[730px]:border-l max-[730px]:border-green-cool max-[730px]:z-[999] transition-all duration-300 overflow-auto`}
         ref={navRef}
       >
         <div className="flex items-center gap-5 max-[730px]:flex-col max-[730px]:items-start">
+          <button
+            className="text-2xl text-green-cool"
+            onClick={() => setIsNavOpen(false)}
+          >
+            <IoCloseOutline />
+          </button>
           <a
             href="#home"
             className="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-green-cool hover:before:w-full before:transition-all before:duration-300 flex items-center gap-3"
