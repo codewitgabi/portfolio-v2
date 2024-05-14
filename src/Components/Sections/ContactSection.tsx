@@ -19,11 +19,19 @@ function ContactSection() {
     const { email, sender, message } = e.target as HTMLFormElement;
 
     await axios
-      .post(`${API_ROOT}/email`, {
-        email: email.value,
-        sender: sender.value,
-        message: message.value,
-      })
+      .post(
+        `${API_ROOT}/email`,
+        {
+          email: email.value,
+          sender: sender.value,
+          message: message.value,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
       .then((_) => {
         setIsSendingMessage(false);
         setFormStatus("success");

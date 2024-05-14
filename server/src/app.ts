@@ -11,6 +11,7 @@ const app = express();
 // middlewares
 
 app.use(express.json());
+app.use(helmet());
 app.use(
   cors({
     origin: ["https://codewitgabi.vercel.app", "http://localhost:5173"],
@@ -18,7 +19,6 @@ app.use(
     optionsSuccessStatus: 200,
   })
 );
-app.use(helmet());
 app.set("port", process.env.PORT || 3000);
 
 const transporter = nodemailer.createTransport({
@@ -33,6 +33,7 @@ const transporter = nodemailer.createTransport({
 
 // send email enpoint
 
+app.options("*", cors());
 app.post(
   "/email",
   body("email")
