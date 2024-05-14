@@ -74,7 +74,7 @@ app.post(
 );
 
 app.get("/resume", (req, res) => {
-  res.status(200).download("public/assets/resume.pdf");
+  res.status(200).download("resume.pdf");
 });
 
 app.listen(app.get("port"), () => {
