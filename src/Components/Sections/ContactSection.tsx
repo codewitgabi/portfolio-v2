@@ -1,35 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import GradientButton from "../GradientButton";
+import axios from "axios";
 
-// const EMAIL_USER = import.meta.env.VITE_EMAIL_USER;
-// const EMAIL_PASSWORD = import.meta.env.VITE_EMAIL_PASSWORD;
-// const EMAIL_PORT = import.meta.env.VITE_EMAIL_PORT;
+const API_ROOT = import.meta.env.VITE_API_ROOT;
 
 function ContactSection() {
+  const [formLog, setFormLog] = useState<string | null>(null);
+  const [formStatus, setFormStatus] = useState<"success" | "error" | null>(
+    null
+  );
+
   const handleContactMessaging = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // const transporter = nodemailer.createTransport({
-    //   host: "smtp.gmail.com",
-    //   port: EMAIL_PORT,
-    //   secure: true,
-    //   auth: {
-    //     user: EMAIL_USER,
-    //     pass: EMAIL_PASSWORD,
-    //   },
-    // });
+    const { email, sender, message } = e.target as HTMLFormElement;
 
-    // const { sender, email, message } = e.target as HTMLFormElement;
+    await axios
+      .post(`${API_ROOT}/email`, {
+        email: email.value,
+        sender: sender.value,
+        message: message.value,
+      })
+      .then((_) => {
+        setFormStatus("success");
+        setFormLog("Message sent successfully.");
+        (e.target as HTMLFormElement).reset();
+      })
+      .catch((_) => {
+        setFormStatus("error");
+        setFormLog("An error occurred, Try again.");
+      });
 
-    // await transporter.sendMail({
-    //   from: email.value,
-    //   to: "",
-    //   subject: `Portfolio from ${sender.value}`,
-    //   text: message.value,
-    //   html: `<p>${message.value}</p>`,
-    // });
-
-    (e.target as HTMLFormElement).reset();
+    window.setTimeout(() => {
+      setFormStatus(null);
+      setFormLog(null);
+    }, 5000);
   };
 
   return (
@@ -52,6 +57,15 @@ function ContactSection() {
             <h3 className="border border-green-cool w-max py-2 px-8 rounded-ss-3xl rounded-ee-3xl">
               Send me a message
             </h3>
+            {formLog && (
+              <span
+                className={`${
+                  formStatus === "success" ? "text-green-500" : "text-red-500"
+                } inline-block mt-8`}
+              >
+                {formLog}
+              </span>
+            )}
             <form action="" method="post" onSubmit={handleContactMessaging}>
               <div className="mt-16 grid grid-cols-2 gap-4">
                 <div className="relative">

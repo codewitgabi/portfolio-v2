@@ -38,7 +38,7 @@ function MobileSideNav({
       >
         <div className="flex items-center gap-5 max-[730px]:flex-col max-[730px]:items-start">
           <button
-            className="text-2xl text-green-cool"
+            className="text-2xl text-green-cool border-2 border-slate-500 rounded-full"
             onClick={() => setIsNavOpen(false)}
           >
             <IoCloseOutline />
