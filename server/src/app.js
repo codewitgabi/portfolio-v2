@@ -1,5 +1,6 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import cors from "cors";
+import logger from "morgan";
 import { config } from "dotenv";
 import nodemailer from "nodemailer";
 import { body, matchedData, validationResult } from "express-validator";
@@ -12,6 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(logger("dev"))
 app.use(helmet());
 app.use(
   cors({
@@ -44,7 +46,7 @@ app.post(
     .withMessage("Please enter a valid email address"),
   body("sender").notEmpty().withMessage("sender field is required").escape(),
   body("message").notEmpty().withMessage("message field is required").escape(),
-  async (req: Request, res: Response) => {
+  async (req, res) => {
     const result = validationResult(req);
 
     if (!result.isEmpty()) {
