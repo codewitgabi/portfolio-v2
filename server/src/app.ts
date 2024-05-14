@@ -1,4 +1,4 @@
-import express, { Request, Response, NextFunction } from "express";
+import express, { Request, Response } from "express";
 import cors from "cors";
 import { config } from "dotenv";
 import nodemailer from "nodemailer";
@@ -11,6 +11,7 @@ const app = express();
 // middlewares
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(
   cors({
@@ -33,7 +34,6 @@ const transporter = nodemailer.createTransport({
 
 // send email enpoint
 
-app.options("*", cors());
 app.post(
   "/email",
   body("email")
