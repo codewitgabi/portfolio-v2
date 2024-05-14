@@ -43,7 +43,7 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>
@@ -52,7 +52,7 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>
@@ -61,7 +61,7 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>
@@ -70,7 +70,7 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/project.png')",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
                   }}
                   className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
                 ></div>

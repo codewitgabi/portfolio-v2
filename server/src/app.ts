@@ -3,7 +3,7 @@ import cors from "cors";
 import { config } from "dotenv";
 import nodemailer from "nodemailer";
 import { body, matchedData, validationResult } from "express-validator";
-import { escape } from "querystring";
+import helmet from "helmet";
 config();
 
 const app = express();
@@ -14,8 +14,11 @@ app.use(express.json());
 app.use(
   cors({
     origin: ["https://codewitgabi.vercel.app", "http://localhost:5173"],
+    credentials: true,
+    optionsSuccessStatus: 200,
   })
 );
+app.use(helmet());
 app.set("port", process.env.PORT || 3000);
 
 const transporter = nodemailer.createTransport({

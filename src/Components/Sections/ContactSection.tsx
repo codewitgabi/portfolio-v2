@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GradientButton from "../GradientButton";
 import axios from "axios";
+import { Discuss } from "react-loader-spinner";
 
 const API_ROOT = import.meta.env.VITE_API_ROOT;
 
@@ -9,8 +10,10 @@ function ContactSection() {
   const [formStatus, setFormStatus] = useState<"success" | "error" | null>(
     null
   );
+  const [isSendingMessage, setIsSendingMessage] = useState<boolean>(false);
 
   const handleContactMessaging = async (e: React.FormEvent) => {
+    setIsSendingMessage(true);
     e.preventDefault();
 
     const { email, sender, message } = e.target as HTMLFormElement;
@@ -22,11 +25,13 @@ function ContactSection() {
         message: message.value,
       })
       .then((_) => {
+        setIsSendingMessage(false);
         setFormStatus("success");
         setFormLog("Message sent successfully.");
         (e.target as HTMLFormElement).reset();
       })
       .catch((_) => {
+        setIsSendingMessage(false);
         setFormStatus("error");
         setFormLog("An error occurred, Try again.");
       });
@@ -114,8 +119,17 @@ function ContactSection() {
                 </label>
               </div>
 
-              <button className="inline-block w-max mt-12 bg-green-cool text-slate-500 rounded-full py-2 px-12 hover:bg-green-200 transition-all duration-300">
+              <button className="w-max mt-12 bg-green-cool text-slate-500 rounded-full py-2 px-12 hover:bg-green-200 transition-all duration-300 flex items-center gap-2">
                 Send Message
+                <Discuss
+                  visible={isSendingMessage}
+                  height="25"
+                  width="25"
+                  ariaLabel="discuss-loading"
+                  wrapperStyle={{}}
+                  wrapperClass="discuss-wrapper"
+                  colors={["#000", "#000"]}
+                />
               </button>
             </form>
           </div>
