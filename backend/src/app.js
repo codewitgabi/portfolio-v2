@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(logger("dev"))
+app.use(logger("dev"));
 app.use(helmet());
 app.use(
   cors({
@@ -72,6 +72,10 @@ app.post(
     });
   }
 );
+
+app.get("/resume", (req, res) => {
+  res.status(200).download("public/assets/resume.pdf");
+});
 
 app.listen(app.get("port"), () => {
   console.log(`Server listening on port ${app.get("port")}`);

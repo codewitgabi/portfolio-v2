@@ -2,6 +2,8 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import GradientButton from "../GradientButton";
 import Avatar from "../../assets/avatar.png";
 
+const API_ROOT = import.meta.env.VITE_API_ROOT;
+
 function HeroSection() {
   return (
     <>
@@ -37,7 +39,7 @@ function HeroSection() {
                 href="mailto:codewitgabi222@gmail.com"
               />
               <a
-                href="../../assets/Resume/resume.pdf"
+                href={`${API_ROOT}/resume`}
                 className="bg-gradient-to-r from-[#194BFD] to-[#AD13FB] text-[0.85rem] rounded-full py-2 px-4 flex items-center gap-2 w-max max-[375px]:w-full max-[375px]:justify-center"
                 target="_blank"
                 rel="noopener noreferrer"

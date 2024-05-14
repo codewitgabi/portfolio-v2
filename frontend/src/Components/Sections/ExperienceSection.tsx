@@ -54,6 +54,7 @@ function ExperienceSection() {
             {experiences.map((experience) => {
               return (
                 <Experience
+                  key={experience.id}
                   company={experience.company}
                   role={experience.role}
                   from={experience.from}
