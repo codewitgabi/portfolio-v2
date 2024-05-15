@@ -5,6 +5,8 @@ import { config } from "dotenv";
 import nodemailer from "nodemailer";
 import { body, matchedData, validationResult } from "express-validator";
 import helmet from "helmet";
+import path from "path";
+import __rootDir from "../root.js";
 config();
 
 const app = express();
@@ -74,7 +76,8 @@ app.post(
 );
 
 app.get("/resume", (req, res) => {
-  res.status(200).download("resume.pdf");
+  const resume = path.resolve(__rootDir, "public", "assets", "resume.pdf");
+  res.status(200).download(resume);
 });
 
 app.listen(app.get("port"), () => {
