@@ -43,36 +43,18 @@ function ProjectSection() {
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/project-2.png')",
                   }}
-                  className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
+                  className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative border border-slate-700"
                 ></div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
+                      "linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/project-3.png')",
                   }}
-                  className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
-                ></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
-                  }}
-                  className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
-                ></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/project.png')",
-                  }}
-                  className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative"
+                  className="bg-no-repeat bg-center bg-cover p-8 rounded-sm h-[300px] relative border border-slate-700"
                 ></div>
               </SwiperSlide>
             </Swiper>
