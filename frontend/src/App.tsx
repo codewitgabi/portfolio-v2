@@ -7,10 +7,22 @@ import HeroSection from "./Components/Sections/HeroSection";
 import ProjectSection from "./Components/Sections/ProjectSection";
 import SkillSection from "./Components/Sections/SkillSection";
 import SpecialtySection from "./Components/Sections/SpecialtySection";
+import { motion, useScroll } from "framer-motion";
 
 function PortfolioApp() {
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
+      {/* scroll progress bar */}
+
+      <motion.div
+        className="fm-progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
+
+      {/* End scroll progress bar */}
+
       <Navbar />
       <HeroSection />
       <AboutSection />

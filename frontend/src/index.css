@@ -72,6 +72,18 @@ html {
   }
 }
 
+.fm-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--green);
+  transform-origin: 0%;
+  z-index: 99999999999;
+}
+
+
 @keyframes animateBubble {
   0% {
     transform: translateY(100vh) scale(0);
