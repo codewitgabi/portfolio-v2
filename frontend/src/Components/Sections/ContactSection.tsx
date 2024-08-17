@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GradientButton from "../GradientButton";
 import axios from "axios";
 import { Discuss } from "react-loader-spinner";
+import { motion } from "framer-motion";
 
 const API_ROOT = import.meta.env.VITE_API_ROOT;
 
@@ -52,7 +53,13 @@ function ContactSection() {
 
   return (
     <>
-      <section className="mt-[5em] bg-secondary-background" id="contact">
+      <motion.section
+        initial={{ opacity: 0, translateY: 100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ delay: 0, duration: 1 }}
+        className="mt-[12em] bg-secondary-background"
+        id="contact"
+      >
         <div className="w-[1024px] mx-auto py-8 grid grid-cols-2 gap-8 max-[1070px]:w-[initial] max-[1070px]:mx-[1.5em] max-[675px]:grid-cols-1 max-[675px]:gap-20">
           <div className="flex flex-col items-start gap-6">
             <div className="">
@@ -142,7 +149,7 @@ function ContactSection() {
             </form>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

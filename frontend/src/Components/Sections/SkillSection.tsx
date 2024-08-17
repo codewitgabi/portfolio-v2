@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Bash from "../../assets/skills/Bash-Dark.svg";
 import Bootstrap from "../../assets/skills/Bootstrap.svg";
 import CSS from "../../assets/skills/CSS.svg";
@@ -32,7 +33,13 @@ import VSCode from "../../assets/skills/VSCode-Dark.svg";
 function SkillSection() {
   return (
     <>
-      <section className="mt-[5em]" id="skills">
+      <motion.section
+        initial={{ opacity: 0, translateY: 100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ delay: 0, duration: 1 }}
+        className="mt-[12em]"
+        id="skills"
+      >
         <div className="w-[1024px] mx-auto max-[1070px]:w-[initial] max-[1070px]:mx-[1.5em]">
           <div className="flex items-center justify-center flex-col gap-2">
             <h4 className="uppercase text-[0.7rem] text-slate-500 tracking-widest">
@@ -82,7 +89,7 @@ function SkillSection() {
             <img src={VSCode} alt="vscode" />
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
